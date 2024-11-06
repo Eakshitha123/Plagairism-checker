@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Checker</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Plagiarism Checker</h1>
+        
+        <!-- File input form -->
+        <form id="file-form">
+            <label for="file1">Select File 1:</label>
+            <input type="file" id="file1" accept=".txt" required>
+            <label for="file2">Select File 2:</label>
+            <input type="file" id="file2" accept=".txt" required>
+            <button type="submit">Check for Plagiarism</button>
+        </form>
+
+        <!-- Loading spinner -->
+        <div id="loadingSpinner" class="spinner" style="display:none;">Checking...</div>
+
+        <!-- Plagiarism results -->
+        <div id="results" class="results">
+            <p id="plagiarism-percentage">Plagiarism by Knuth Morris Pratt Algorithm: <span class="percentage">-</span></p>
+            <!--<p id="sequence-matcher">Plagiarism by Sequence Matcher: <span class="percentage">-</span></p>-->
+            <p id="threshold-result"></p>
+        </div>
+
+        <!-- Results and plagiarized text container -->
+        <div class="results-container">
+            <!-- Pie chart for plagiarism percentage -->
+            <div id="result-container">
+                <canvas id="plagiarismChart" width="300" height="300"></canvas>
+            </div>
+
+            <!-- Plagiarized text display -->
+            <div id="plagiarized-text-container">
+                <h3>Plagiarized Text:</h3>
+                <div id="plagiarized-text"></div>
+            </div>
+        </div>
+
+        <!-- Suggestions for reducing plagiarism -->
+        <div id="suggestions-container" style="display:none;">
+            <h3>Suggestions to Reduce Plagiarism:</h3>
+            <p id="suggestions"></p>
+        </div>
+
+        <!-- Action buttons -->
+        <button id="clearBtn" class="action-btn">Clear</button>
+        <button id="downloadBtn" class="action-btn">Download Report</button>
+
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

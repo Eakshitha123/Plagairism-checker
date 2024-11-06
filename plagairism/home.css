@@ -1,0 +1,187 @@
+/* General layout and styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+button[type="submit"], .action-btn {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="submit"]:hover, .action-btn:hover {
+    background-color: #45a049;
+}
+
+/* Spinner styling */
+.spinner {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin: 15px 0;
+}
+
+/* Results styling */
+.results {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.percentage {
+    font-weight: bold;
+    color: #FF6347;
+}
+
+#threshold-result {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Container for results and plagiarized text */
+.results-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Plagiarized text section */
+#plagiarized-text-container {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+#plagiarized-text-container h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Pie chart container styling */
+#result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Suggestions section */
+#suggestions-container {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#suggestions-container h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Action buttons styling */
+.action-btn {
+    margin: 10px 5px 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.action-btn:hover {
+    background-color: #007bb5;
+}
+
+/* Check history styling */
+.history-container {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.history-container h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+.history-container div {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* General styles omitted for brevity */
+
+#plagiarized-text-container {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+#plagiarized-text-container h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+.highlight {
+    background-color: #FF6347;
+    color: white;
+    font-weight: bold;
+    padding: 2px 4px;
+    margin: 0 2px;
+    border-radius: 3px;
+}
